@@ -5,16 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Quiz</title>
+    <title>Timed Quiz</title>
 </head>
 <body>
     <header>
-        <p class="viewScore">
-            <ul>
-                <li>View Scores</li>
-            </ul>
-        </p>
+        <h1>Web-API Coding Quiz</h1>
+        <h1 id="timer"></h1>
     </header>
+
+<main>
+
+    <section class="main-menu">
+        <h2>Coding Quiz Challenge</h2>
+
+        <button id="start-button">Start Quiz!</button>
+    </section>
+
+    <section class="question">
+        <h2 id="question-title"></h2>
+        <li id="choice-1"></li>
+        <li id="choice-2"></li>
+        <li id="choice-3"></li>
+        <li id="choice-4"></li>
+        <h4 id="answer-outcome"></h4>
+    </section>
+
+    <form id= "submit-initials">
+        <input type="text" placeholder="Enter Your Initials" id="initials">
+        <button id="submit-button">Submit</button>
+    </form>
+
+    <section class="end-screen"></section>
+
+</main>
     
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
