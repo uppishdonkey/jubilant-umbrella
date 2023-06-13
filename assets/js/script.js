@@ -1,17 +1,22 @@
 var timerEl = document.querySelector("#timer");
 var secondsLeft = 75;
-
 var startButtonEl = document.querySelector("#start-button");
-
 var initialFormEl = document.querySelector("#submit-initials")
-initialFormEl.hidden = true;
-
 var questionTitleEl = document.querySelector("#question-title");
 var choice1El = document.querySelector("#choice-1");
 var choice2El = document.querySelector("#choice-2");
 var choice3El = document.querySelector("#choice-3");
 var choice4El = document.querySelector("#choice-4");
 var outcomeEl = document.querySelector("#answer-outcome");
+var questionEl = document.querySelector(".question");
+var mainMenuEl = document.querySelector(".main-menu");
+var viewScoresEl = document.querySelector("#view-scores");
+var scoreEl = document.querySelector("#score-display");
+var score;
+var percentScore = 5 * score;
+
+
+initialFormEl.hidden = true;
 
 // object containing every question
 var questions = {
@@ -33,6 +38,9 @@ var correctAnswers = {
 // function that starts the quiz when the start button is clicked
 function startQuiz () {
     setTime();
+    mainMenuEl.setAttribute('style', 'display: none');
+    questionEl.setAttribute('style', 'display: none');
+    
 }
 
 // function to display timer
