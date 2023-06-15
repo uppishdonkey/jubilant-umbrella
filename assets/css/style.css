@@ -11,7 +11,11 @@ header {
     flex-wrap: nowrap;
 }
 
-
+.question {
+    display: flex;
+    border: 3px;
+    border-color: black;
+}
 
 .main-menu {
     display: flex;

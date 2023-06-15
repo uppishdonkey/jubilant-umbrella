@@ -17,7 +17,7 @@
 <main>
 
     <section class="main-menu">
-        <h2>Coding Quiz Challenge</h2>
+        <h2 id="main-text">Coding Quiz Challenge</h2>
         <h4 id="view-scores"></h4>
         <h3>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will subtract 10 seconds from the timer! </h3>
         <button id="start-button">Start Quiz!</button>
@@ -25,25 +25,24 @@
 
     <section class="question">
         <h2 id="question-title"></h2>
-        <li id="choice-1"></li>
-        <li id="choice-2"></li>
-        <li id="choice-3"></li>
-        <li id="choice-4"></li>
+        <h3 id="choice-1"></h3>
+        <h3 id="choice-2"></h3>
+        <h3 id="choice-3"></h3>
+        <h3 id="choice-4"></h3>
         <h4 id="answer-outcome"></h4>
     </section>
 
     <section class="results-menu">
         <h2>You Scored:</h2>
         <h3 id="score-display"></h3>
+
+        <form id= "submit-initials">
+            <input type="text" placeholder="Enter Your Initials" id="initials">
+            <button id="submit-button">Submit</button>
+        </form>
         
     </section>
 
-    <form id= "submit-initials">
-        <input type="text" placeholder="Enter Your Initials" id="initials">
-        <button id="submit-button">Submit</button>
-    </form>
-
-    <section class="end-screen"></section>
 
 </main>
     
